@@ -1,0 +1,8 @@
+#!/bin/sh
+
+sudo debconf-set-selections openssh-server.debconf
+mkdir $HOME/.ssh
+chmod 0700 $HOME/.ssh
+touch $HOME/.ssh/authorized_keys
+cat new-server.pub >> $HOME/.ssh/authorized_keys
+ip addr

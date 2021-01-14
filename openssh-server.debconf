@@ -1,0 +1,2 @@
+openssh-server openssh-server/permit-root-login         boolean false
+openssh-server openssh-server/password-authentication   boolean false
